@@ -97,6 +97,10 @@ body {
   color: #fff;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -290,6 +294,55 @@ ul, ol {
 }
 .row > * {
   padding: 0 20px;
+}
+
+.color-accent {
+  color: #70C1FF;
+}
+
+h1, .h1 {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 128px;
+  line-height: 100%;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(-40.83%, #70C1FF), to(#FFFFFF));
+  background: linear-gradient(180deg, #70C1FF -40.83%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0 68px;
+}
+
+h2, .h2 {
+  width: 100%;
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 0 0 55px;
+}
+
+h4, .h4 {
+  width: 100%;
+  margin: 0 0 34px;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+h5, .h5 {
+  width: 100%;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: normal;
+  margin: 0;
+}
+
+.text-big {
+  font-size: 24px;
+  line-height: 100%;
 }
 
 .slick-slider {
