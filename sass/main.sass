@@ -172,9 +172,8 @@
         background: url('../img/line6.svg') no-repeat center
         background-size: 100%
 
-
 .advantages
-    padding: 50px 0 130px
+    padding: 50px 0 0
 
 .advantages-box
     margin: 0 0 65px
@@ -188,13 +187,112 @@
         margin: 0
     &::before
         display: none
-    
+
 .advantages-box-right
-    margin-left: auto   
+    margin-left: auto
     &:last-child
-        margin: 0 0 0 auto 
+        margin: 0 0 0 auto
 
 .advantages-box-center
     margin: 52px auto 0
     &:last-child
-        margin: 52px auto 0    
+        margin: 52px auto 0
+
+.interface
+    position: relative
+    z-index: 1
+    padding: 130px 0 168px
+    &::before
+        content: ''
+        position: absolute
+        top: 45px
+        left: -213px
+        width: 725px
+        height: 725px
+        border-radius: 50%
+        background: radial-gradient(50% 50% at 50% 50%, #3BAAFF 0%, rgba(39, 161, 255, 0) 83.65%)
+        backdrop-filter: blur(200px)
+        z-index: -2
+        opacity: 0.4
+    h2
+        margin: 0 0 45px
+    .box-text
+        max-width: 690px
+        margin: 45px 0 76px
+
+.interface-image
+    margin: 0 0 0 auto
+    padding: 0 20px 0 0
+    display: flex
+    align-items: center
+    justify-content: flex-end
+
+.you-need-wrapper
+    margin: 0 auto
+    max-width: 1611px
+    width: 100%
+    padding: 30px
+    display: flex
+    align-items: stretch
+    background: linear-gradient(90.74deg, #172131 25.68%, #1D2631 94.97%)
+    backdrop-filter: blur(24px)
+    border-radius: 30px
+    &__title
+        padding: 0 30px 0 0
+        border-right: 1px solid #fff
+        max-width: 650px
+    &__content
+        width: calc( 100% - 650px )
+        padding: 0 0 0 30px
+    h2
+        margin: 0 0 17px
+    .h4
+        margin: 0
+
+.models
+    margin: 190px 0 0
+    .h1
+        font-size: 280px
+        margin: 0 0 30px
+    h2
+        margin: 0
+
+.models-content
+    padding: 0 60px 0 0
+    border-right: 1px solid #fff
+    .h3
+        margin: 38px 0 0
+        padding: 33px 0 0
+        border-top: 1px solid $accent
+        width: fit-content
+
+.models-list
+    height: 547px
+    position: relative
+    z-index: 1
+    &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 204px
+        background: linear-gradient(0deg, #11161D 10.1%, rgba(17, 22, 29, 0) 100%)
+        z-index: 1
+    .horizontal-scroll
+        padding: 0 54px 0 0
+        width: 100%
+        height: 507px
+
+.models-box
+    width: 100%
+    margin: 0 0 26px
+    border-radius: 20px
+    background: linear-gradient(90.74deg, #172131 25.68%, #1D2631 94.97%)
+    backdrop-filter: blur(24px)
+    padding: 20px
+    .h3
+        margin: 0 0 20px
+
+.functions
+    padding: 148px 0 0

@@ -218,15 +218,38 @@ h4, .h4
   line-height: 110%
 
 h5, .h5
-  width: 100% 
+  width: 100%
   font-size: 24px
   line-height: normal
   font-weight: normal
-  margin: 0 
-  
+  margin: 0
+
 .text-big
   font-size: 24px
-  line-height: 100%  
+  line-height: 100%
+
+.horizontal-scroll
+  overflow-y: auto
+
+  // Firefox
+  scrollbar-width: 16px
+  scrollbar-color: #182333
+
+  // Chrome / Edge / Safari
+  &::-webkit-scrollbar
+    width: 16px
+
+  &::-webkit-scrollbar-track
+    background: #182333
+    border-radius: 30px
+
+  &::-webkit-scrollbar-thumb
+    background: #2A3546
+    border-radius: 10px
+    // border: 4px solid #182333
+
+    &:hover
+      background: #34445C
 
 // slider
 .slick-slider
