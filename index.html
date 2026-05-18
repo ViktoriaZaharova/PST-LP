@@ -707,6 +707,29 @@
     </div>
   </footer>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title h5">оставить
+            заявку</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-callback">
+            <label><input type="text" placeholder="Имя" name="name"></label>
+            <label><input type="text" placeholder="Телефон" name="phone" required></label>
+            <label><input type="text" placeholder="E-mail" name="mail" required></label>
+            <button type="submit" class="btn btn-accent">отправить заявку</button>
+            <div class="consent">Отправляя заявку, вы соглашаетесь на обработку персональных данных</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- add plugins js-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
