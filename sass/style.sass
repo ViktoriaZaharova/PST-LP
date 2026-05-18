@@ -74,16 +74,16 @@ input, textarea, select
   padding: 0 15px
   box-sizing: border-box
   font-family: $default-font
-  border: none
-  border-radius: 10px
+  border: 1px solid #007FBF
+  border-radius: 20px
   width: 100%
-  height: 54px
+  height: 60px
   background: transparent
-  color: #000
-  font-size: 15px
+  color: #fff
+  font-size: 16px
   cursor: pointer
   &::placeholder
-    color: #595959
+    color: $accent
 
   &:hover, &:focus
     outline: none
@@ -99,7 +99,7 @@ input[type="radio"], input[type="checkbox"]
 label
   display: block
   width: 100%
-  margin: 0 0 13px
+  margin: 0 0 27px
 
   &:last-child
     margin: 0
@@ -225,7 +225,10 @@ h5, .h5
   margin: 0
 
 .mb-35
-  margin-bottom: 35px  
+  margin-bottom: 35px
+
+.mb-45
+  margin-bottom: 45px
 
 .text-big
   font-size: 24px
@@ -260,6 +263,63 @@ h5, .h5
 
 .slick-slide
   outline: none
+
+.slider-nav
+  display: flex
+  align-items: center
+
+.slick-arrow
+  width: 74px
+  height: 74px
+  min-width: 74px
+  margin: 0 40px 0 0
+  position: relative
+  z-index: 1
+  opacity: 1
+  border: 2px solid #007FBF
+  border-radius: 50%
+  background: transparent
+  transition: .3s ease
+  @include d-flex
+  &:last-child
+    margin: 0
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    width: 19px
+    height: 34px
+    transform: translate(-50%, -50%)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: contain
+    transition: .3s ease
+  &:hover
+    background: linear-gradient(90.74deg, #172131 25.68%, #1D2631 94.97%)
+    backdrop-filter: blur(24px)
+    border-color: transparent
+    &::before
+      width: 47px
+      height: 62px
+      background-image: url("data:image/svg+xml,%3Csvg width='47' height='62' viewBox='0 0 47 62' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_di_3202_255)'%3E%3Cpath d='M17.4142 45.3594C16.1543 46.6193 14 45.7269 14 43.9451L14 14.004C14 12.2222 16.1543 11.3299 17.4142 12.5898L32.3848 27.5604C33.1658 28.3414 33.1658 29.6077 32.3848 30.3888L17.4142 45.3594Z' fill='url(%23paint0_linear_3202_255)'/%3E%3Cpath d='M14.5 14.0039C14.5001 12.6676 16.1156 11.9985 17.0605 12.9434L32.0312 27.9141C32.6169 28.4998 32.617 29.4494 32.0312 30.0352L17.0605 45.0059C16.1156 45.9506 14.5001 45.2815 14.5 43.9453V14.0039Z' stroke='url(%23paint1_linear_3202_255)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_di_3202_255' x='0' y='0' width='46.9707' height='61.9492' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='2'/%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.109804 0 0 0 0 0.360784 0 0 0 0 0.709804 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_3202_255'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_3202_255' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='7'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.567308 0 0 0 0 0.815574 0 0 0 0 1 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect2_innerShadow_3202_255'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_3202_255' x1='6.25369' y1='31.2894' x2='35.5636' y2='16.9448' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23007FBF'/%3E%3Cstop offset='0.495192' stop-color='%23006496'/%3E%3Cstop offset='1' stop-color='%230076B1'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_3202_255' x1='32.9706' y1='31.2894' x2='13.5257' y2='31.2894' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23C2E5FF'/%3E%3Cstop offset='0.5' stop-color='white'/%3E%3Cstop offset='1' stop-color='%231C5CB5'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E")
+
+.slick-prev
+  &::before
+    left: 45%
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='34' viewBox='0 0 19 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.4707 31.9453C18.4706 33.2816 16.8551 33.9507 15.9102 33.0059L0.939455 18.0352C0.353774 17.4494 0.35375 16.4998 0.939455 15.9141L15.9102 0.943359C16.8551 -0.00141744 18.4706 0.667705 18.4707 2.00391L18.4707 31.9453Z' stroke='%23007FBF'/%3E%3C/svg%3E")
+  &:hover
+    &::before
+      transform: translate(-50%, -50%) rotate(180deg)
+
+.slick-next
+  &::before
+    left: 55%
+    transform: translate(-50%, -50%) rotate(180deg)
+    background-image: url("data:image/svg+xml,%3Csvg width='19' height='34' viewBox='0 0 19 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.4707 31.9453C18.4706 33.2816 16.8551 33.9507 15.9102 33.0059L0.939455 18.0352C0.353774 17.4494 0.35375 16.4998 0.939455 15.9141L15.9102 0.943359C16.8551 -0.00141744 18.4706 0.667705 18.4707 2.00391L18.4707 31.9453Z' stroke='%23007FBF'/%3E%3C/svg%3E")
+  &:hover
+    &::before
+      transform: translate(-50%, -50%)
 
 //checkbox my
 .label-checkbox

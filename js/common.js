@@ -73,3 +73,14 @@ $('[name="mail"]').on('blur', function () {
     }
 
 });
+
+$('.learn-slider').slick({
+    slidesToShow: 1,
+    arrows: true,
+    variableWidth: true,
+    infinite: true,
+    prevArrow: '<button class="slick-arrow slick-prev"></button>',
+    nextArrow: '<button class="slick-arrow slick-next"></button>',
+    appendArrows: $('.learn-slider__arrow'),
+});
+

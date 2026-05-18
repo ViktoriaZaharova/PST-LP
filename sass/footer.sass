@@ -1,2 +1,49 @@
 @import "vars"
 
+footer
+    position: relative
+    z-index: 0
+    padding: 170px 0 65px
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 50%
+        width: 1373px
+        height: 1373px
+        left: -665px
+        bottom: 0
+        background: radial-gradient(50% 50% at 50% 50%, #3BAAFF 0%, rgba(39, 161, 255, 0) 83.65%)
+        backdrop-filter: blur(200px)
+        z-index: -2
+        opacity: 0.4
+
+.footer-bottom
+    margin: 100px 0 0        
+
+.link-developer
+    display: flex
+    align-items: center
+    margin: 0 0 0 auto
+    color: $accent
+    img
+        width: 143px
+        margin: 0 0 0 24px
+
+
+.menu-document
+    font-size: 14px
+    li
+        a
+            color: $accent
+            &:hover
+                color: #fff
+
+.map
+    width: 100%
+    height: 366px
+    border-radius: 20px
+    overflow: hidden
+    @include d-flex
+    iframe
+        width: 100%
+        height: 100%
