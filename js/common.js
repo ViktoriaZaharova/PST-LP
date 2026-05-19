@@ -1,5 +1,3 @@
-// $('[name="phone"]').mask('+7 (999) 999-99-99');
-
 //плавный скролл
 $(document).ready(function () {
     $('.go_to').click(function (e) {
@@ -18,9 +16,7 @@ $(document).ready(function () {
 
 $('.btn-burger').on('click', function (e) {
     e.preventDefault
-    $(this).toggleClass('click');
     $('.nav-menu').fadeToggle();
-    // $('.header-contacts').toggleClass('active');
 });
 
 
@@ -84,3 +80,21 @@ $('.learn-slider').slick({
     appendArrows: $('.learn-slider__arrow'),
 });
 
+$(document).ready(function () {
+
+    $('.unique-tab').on('click', function () {
+
+        let tabId = $(this).data('tab');
+
+        $('.unique-tab').removeClass('active');
+        $(this).addClass('active');
+
+        $('.tab-pane-custom').removeClass('active').hide();
+
+        $('#' + tabId)
+            .fadeIn(200)
+            .addClass('active');
+
+    });
+
+});

@@ -1,2 +1,628 @@
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1720px) {
+  h1, .h1 {
+    font-size: 100px;
+  }
+  h2, .h2 {
+    font-size: 54px;
+  }
+  h4, .h4, .h3, h3 {
+    font-size: 30px;
+  }
+  .text-big {
+    font-size: 20px;
+  }
+  .home-content .text-big {
+    max-width: 415px;
+  }
+  .models .h1 {
+    font-size: 200px;
+  }
+  .models-content .h3 {
+    padding: 20px 0 0;
+    margin: 20px 0 0;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .header-wrapper {
+    padding: 10px 20px;
+  }
+  .menu li {
+    margin: 0 15px 0 0;
+  }
+  .menu li:last-child {
+    margin: 0;
+  }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .btn-callback {
+    margin: 0 16px;
+  }
+  header .address-box {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 3;
+    padding: 30px 30px;
+    background: linear-gradient(90.74deg, #172131 25.68%, rgba(26, 36, 49, 0.75) 60.33%, #1D2631 94.97%);
+  }
+  .nav-menu .address-box, .nav-menu .header-contacts, .nav-menu .btn-callback {
+    display: block;
+  }
+  .nav-menu .address-box {
+    margin: 30px 0;
+  }
+  .nav-menu .btn-callback {
+    margin: 30px 0 0;
+    width: 100%;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .menu li {
+    margin: 0 0 16px;
+  }
+  .menu li:last-child {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  h1, .h1 {
+    font-size: 96px;
+    margin: 0 0 40px;
+  }
+  h2, .h2 {
+    font-size: 46px;
+  }
+  .container {
+    max-width: 100%;
+  }
+  .home {
+    padding: 120px 0;
+  }
+  .price-box,
+  .callback-wrapper,
+  .models-box,
+  .learn-box {
+    padding: 20px;
+  }
+  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before {
+    width: 700px;
+    height: 700px;
+    opacity: 0.1;
+  }
+  .about-stend-box {
+    margin: 0 0 30px;
+  }
+  .about-stend-box:last-child {
+    margin: 0;
+  }
+  .equipment {
+    padding: 50px 0 100px;
+  }
+  .equipment-box::before {
+    display: none;
+  }
+  .equipment-box {
+    max-width: none;
+    margin: 0 0 40px;
+  }
+  .equipment-box:first-child, .equipment-box:last-child {
+    margin: 0 0 40px;
+  }
+  .equipment-box.advantages-box-center {
+    margin: 20px auto 0;
+  }
+  .equipment-box br {
+    display: none;
+  }
+  .models .h1 {
+    font-size: 150px;
+  }
+  .models-list .horizontal-scroll {
+    padding: 0 30px 0 0;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .row {
+    margin: 0 -12px;
+  }
+  .row > * {
+    padding: 0 12px;
+  }
+  h1, .h1 {
+    font-size: 74px;
+  }
+  h2, .h2 {
+    font-size: 38px;
+    margin: 0 0 40px;
+  }
+  h3, .h3,
+  h4, .h4 {
+    font-size: 28px;
+    margin: 0 0 24px;
+  }
+  h5, .h5 {
+    font-size: 20px;
+  }
+  .accordion-button {
+    font-size: 28px;
+  }
+  .text-big {
+    font-size: 20px;
+  }
+  .about-stend {
+    padding: 80px 0 150px;
+  }
+  .about-stend-box__icon {
+    margin: 0 30px 0 0;
+  }
+  .home-image,
+  .about-stend__image,
+  .interface-image,
+  .price-image {
+    max-width: 100%;
+    margin: 40px auto 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before {
+    width: 500px;
+    height: 500px;
+  }
+  .equipment-image {
+    margin: 30px auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .btn {
+    height: 56px;
+    padding: 16px 24px;
+  }
+  .content-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .content-right {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid rgba(0, 170, 255, 0.3);
+    padding-left: 0;
+    padding-top: 40px;
+  }
+  .equipment-box-right {
+    text-align: left;
+  }
+  .advantages-box {
+    max-width: none;
+    width: 100%;
+  }
+  .advantages-box br {
+    display: none;
+  }
+  .equipment-box.advantages-box-center {
+    margin: 0 auto;
+  }
+  .interface {
+    padding: 50px 0;
+  }
+  .you-need-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .you-need-wrapper__title {
+    width: 100%;
+    max-width: none;
+    padding: 0 0 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .you-need-wrapper__content {
+    width: 100%;
+    padding: 20px 0 0;
+  }
+  .models {
+    margin: 100px 0 0;
+  }
+  .functions {
+    padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+  h1, .h1 {
+    font-size: 56px;
+    margin: 0 0 30px;
+  }
+  h2, .h2 {
+    font-size: 36px;
+    margin: 0 0 30px;
+  }
+  h3, .h3,
+  h4, .h4, .accordion-button {
+    font-size: 24px;
+  }
+  .text-big {
+    font-size: 18px;
+  }
+  header .header-contacts {
+    display: none;
+  }
+  .footer-top,
+  .callback-wrapper,
+  .you-need-wrapper,
+  .price-wrapper,
+  .models-content,
+  .interface-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .menu {
+    width: 100%;
+    margin: 24px 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header-contacts {
+    width: 100%;
+    margin: 20px 0 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home {
+    text-align: center;
+    padding: 150px 0 50px;
+  }
+  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before {
+    width: 700px;
+    height: 700px;
+  }
+  .home-content,
+  .home-image {
+    width: 100%;
+  }
+  .home-image {
+    margin: 30px auto 0;
+  }
+  .advantages-box,
+  .learn-box,
+  .equipment-box,
+  .models-box,
+  .prices-card,
+  .about-stend-box {
+    margin: 0 0 24px;
+  }
+  .horizontal-scroll {
+    overflow-x: auto;
+  }
+  .table,
+  table {
+    min-width: 900px;
+  }
+  .map {
+    height: 400px;
+  }
+  .footer-column {
+    width: 50%;
+    margin: 0 0 30px;
+  }
+  .interface .box-text {
+    max-width: none;
+    margin: 20px 0 30px;
+  }
+  .models-list {
+    margin: 30px 0 0;
+  }
+  .models-list::before {
+    height: 150px;
+  }
+  .models-content {
+    padding: 0 0 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .accordion-item {
+    margin: 0 0 20px;
+  }
+  .accordion-item:last-child {
+    margin: 0 0 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .unique-section {
+    padding: 70px 0;
+  }
+  .unique-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .unique-nav {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-bottom: 10px;
+  }
+  .unique-nav::-webkit-scrollbar {
+    height: 4px;
+  }
+  .unique-nav::-webkit-scrollbar-thumb {
+    background: #1caeff;
+  }
+  .unique-tab {
+    min-width: 240px;
+    font-size: 16px;
+    min-height: 60px;
+    padding: 16px 20px;
+  }
+  .content-box {
+    padding: 24px;
+    border-radius: 24px;
+  }
+  .content-left h3 {
+    font-size: 34px;
+  }
+  .content-count {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+  .feature-item {
+    border-radius: 24px;
+    font-size: 14px;
+    line-height: 1.4;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .compare-head,
+  .compare-row {
+    gap: 10px;
+  }
+  .check-icon,
+  .cross-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 22px;
+  }
+  .home-content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home-content .text-big {
+    max-width: none;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  h1, .h1 {
+    font-size: 34px;
+    margin: 0 0 24px;
+  }
+  h2, .h2 {
+    font-size: 26px;
+    margin: 0 0 24px;
+  }
+  h3, .h3,
+  h4, .h4 {
+    font-size: 20px;
+  }
+  .text-big {
+    font-size: 16px;
+  }
+  .container {
+    padding: 0 12px;
+  }
+  .row {
+    margin: 0 -8px;
+  }
+  .row > * {
+    padding: 0 8px;
+  }
+  header .btn-callback {
+    display: none;
+  }
+  .advantages,
+  .models,
+  .functions,
+  .interface,
+  .equipment,
+  .prices,
+  .learn,
+  .callback,
+  footer {
+    padding: 40px 0;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  .price-box,
+  .callback-wrapper,
+  .equipment-box,
+  .models-box,
+  .advantages-box,
+  .learn-box,
+  .you-need-wrapper {
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .accordion-button {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .modal-dialog {
+    margin: 12px;
+  }
+  .modal-content {
+    padding: 20px 16px;
+  }
+  .map {
+    height: 320px;
+  }
+  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before {
+    display: none;
+  }
+  .about-stend {
+    padding: 60px 0;
+  }
+  .about-stend-box {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-stend-box__icon {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    margin: 0 20px 0 0;
+  }
+  .models .h1 {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h1, .h1 {
+    font-size: 30px;
+  }
+  h2, .h2 {
+    font-size: 22px;
+  }
+  h3, .h3,
+  h4, .h4 {
+    font-size: 18px;
+  }
+  h5, .h5 {
+    font-size: 17px;
+  }
+  .btn {
+    height: 48px;
+    padding: 14px 20px;
+  }
+  input,
+  textarea,
+  select {
+    height: 48px;
+    padding: 0 14px;
+  }
+  .price-box,
+  .callback-wrapper,
+  .equipment-box,
+  .models-box,
+  .advantages-box,
+  .learn-box,
+  .you-need-wrapper {
+    padding: 16px;
+  }
+  .phone-link {
+    font-size: 18px;
+  }
+  .consent {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  h1, .h1 {
+    font-size: 26px;
+  }
+  h2, .h2 {
+    font-size: 20px;
+  }
+  .container {
+    padding: 0 10px;
+  }
+  .btn {
+    border-radius: 14px;
+  }
+  .price-box,
+  .callback-wrapper,
+  .equipment-box,
+  .models-box,
+  .advantages-box,
+  .learn-box,
+  .you-need-wrapper {
+    padding: 14px;
+    border-radius: 16px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  h1, .h1 {
+    font-size: 22px;
+  }
+  h2, .h2 {
+    font-size: 18px;
+  }
+  h3, .h3,
+  h4, .h4 {
+    font-size: 16px;
+  }
+  body {
+    font-size: 13px;
+  }
+  .btn {
+    font-size: 13px;
+    height: 44px;
+  }
+  input,
+  textarea,
+  select {
+    font-size: 13px;
+    height: 44px;
+  }
+}

@@ -21,11 +21,11 @@
         opacity: 0.4
 
 .home-content
-    // padding: 245px 0 0
     &-wrapper
         display: flex
         align-items: center
         margin: 34px 0 0
+        text-align: left
     .text-big
         max-width: 475px
         margin: 0 auto 0 0
@@ -360,9 +360,190 @@
 .accordion-body
     padding: 0 20px 20px
 
+// unique
 .unique-features
+    position: relative
+    z-index: 1
     h2
         margin: 0 0 80px
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        border-radius: 50%
+        width: 1373px
+        height: 1373px
+        background: radial-gradient(50% 50% at 50% 50%, #3BAAFF 0%, rgba(39, 161, 255, 0) 83.65%)
+        backdrop-filter: blur(200px)
+        opacity: 0.4
+        top: -346px
+        right: -477px
+
+.unique-wrapper
+    display: flex
+    align-items: center
+    position: relative
+    z-index: 1
+
+.unique-nav
+    width: 234px
+    min-width: 234px
+    flex-shrink: 0
+    display: flex
+    flex-direction: column
+    gap: 34px
+    position: absolute
+    z-index: 2
+    left: 0
+
+
+.unique-tab
+    width: 100%
+    min-height: 72px
+    border-radius: 20px
+    border: 1px solid transparent
+    background: linear-gradient(90.74deg, #172131 25.68%, #1D2631 94.97%)
+    backdrop-filter: blur(24px)
+
+    color: $accent
+    text-align: left
+    padding: 20px 24px
+    font-size: 18px
+    transition: .3s ease
+
+    &:hover
+        border-color: #1caeff
+
+    &.active
+        background: linear-gradient(180deg, #1caeff 0%, #0879d1 100%)
+        color: #fff
+        box-shadow: 0 0 30px rgba(28,174,255,.5)
+
+.unique-content
+    width: calc( 100% - 104px )
+    margin: 0 0 0 auto
+
+.content-box
+    display: flex
+    gap: 40px
+    padding: 50px
+    border-radius: 40px
+    background: linear-gradient(90deg, rgba(17,35,60,.95) 0%, rgba(10,18,34,.95) 100%)
+    backdrop-filter: blur(30px)
+
+.content-left
+    flex: 1
+    min-width: 0
+
+    h3
+        font-size: 52px
+        color: #fff
+        margin-bottom: 10px
+        font-weight: 300
+
+.content-count
+    font-size: 42px
+    color: #5eb8ff
+    margin-bottom: 40px
+    font-weight: 300
+
+.feature-list
+    display: flex
+    flex-direction: column
+    gap: 20px
+    max-height: 600px
+    overflow-y: auto
+    padding-right: 10px
+
+    &::-webkit-scrollbar
+        width: 6px
+
+    &::-webkit-scrollbar-thumb
+        background: #2a74ff
+        border-radius: 20px
+
+    &::-webkit-scrollbar-track
+        background: rgba(255,255,255,.05)
+
+.feature-item
+    min-height: 64px
+    border: 1px solid #0f8fff
+    border-radius: 100px
+    padding: 18px 24px
+    display: flex
+    align-items: center
+    gap: 16px
+    color: #fff
+    font-size: 17px
+    background: rgba(255,255,255,.02)
+
+.dot
+    width: 14px
+    height: 14px
+    min-width: 14px
+    border-radius: 50%
+    background: #61bfff
+
+.content-right
+    width: 320px
+    flex-shrink: 0
+    border-left: 1px solid rgba(0,170,255,.3)
+    padding-left: 40px
+
+.compare-head
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    gap: 30px
+    margin-bottom: 40px
+
+.compare-col
+    text-align: center
+
+    img
+        width: 80px
+        margin-bottom: 15px
+
+    span
+        display: block
+        color: #7bc7ff
+        font-size: 15px
+
+.compare-body
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.compare-row
+    display: grid
+    grid-template-columns: repeat(2,1fr)
+    gap: 30px
+    align-items: center
+
+.check-icon,
+.cross-icon
+    width: 58px
+    height: 58px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    font-size: 28px
+
+.check-icon
+    border: 2px solid #1caeff
+    color: #1caeff
+    box-shadow: 0 0 20px rgba(28,174,255,.4)
+
+.cross-icon
+    border: 2px solid #ff2c5c
+    color: #ff2c5c
+    box-shadow: 0 0 20px rgba(255,44,92,.35)
+
+
+
+
+
 
 // prices
 .prices
@@ -450,7 +631,6 @@
         padding: 0 20px
     .slick-list
         margin: 0 -20px
-    
 
 .learn-box
     width: 593px
@@ -469,7 +649,6 @@
             border-radius: 20px
     &__body
         padding: 45px 0 0
-
 
 // callback
 .callback-wrapper
@@ -497,4 +676,4 @@
 .consent
     width: 100%
     font-size: 12px
-    color: #9AABC6        
+    color: #9AABC6
