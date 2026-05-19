@@ -24,6 +24,19 @@
         padding: 20px 0 0
         margin: 20px 0 0
 
+    .callback-wrapper__content
+        max-width: none
+        width: 100%
+
+    .callback-wrapper
+        .form-callback
+            width: 100%
+            margin: 20px 0 0
+            label
+                max-width: none
+                flex: 1
+                padding: 0 10px 0 0
+
 @media only screen and (max-width: 1500px)
     .header-wrapper
         padding: 10px 20px
@@ -87,7 +100,7 @@
     .learn-box
         padding: 20px
 
-    .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before
+    .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before, footer::before
         width: 700px
         height: 700px
         opacity: 0.1
@@ -115,9 +128,18 @@
 
     .models .h1
         font-size: 150px
-        
-    .models-list .horizontal-scroll
+
+    .models-list .vertical-scroll
         padding: 0 30px 0 0
+
+    footer::before
+        left: -150px
+
+    footer
+        padding: 100px 0 30px
+
+    .map
+        margin: 30px 0 0
 
 @media only screen and (max-width: 1200px)
     body
@@ -160,15 +182,14 @@
 
     .home-image,
     .about-stend__image,
-    .interface-image,
-    .price-image
+    .interface-image
         max-width: 100%
         margin: 40px auto 0
         justify-content: center
         align-items: center
         display: flex
 
-    .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before
+    .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before, footer::before
         width: 500px
         height: 500px
 
@@ -181,13 +202,6 @@
     .btn
         height: 56px
         padding: 16px 24px
-
-    // .prices-card,
-    // .advantages-box,
-    // .learn-box,
-    // .models-box,
-    // .price-box
-    //     height: 100%
 
     .content-box
         flex-direction: column
@@ -209,7 +223,7 @@
             display: none
 
     .equipment-box.advantages-box-center
-        margin: 0 auto 
+        margin: 0 auto
 
     .interface
         padding: 50px 0
@@ -234,6 +248,48 @@
 
     .functions
         padding: 100px 0
+
+    .address-box-footer, .schedule-box
+        margin: 0 0 30px
+
+    .unique-wrapper
+        flex-direction: column
+        align-items: flex-start
+
+    .unique-content
+        width: 100%
+
+    .unique-nav
+        position: relative
+        z-index: 1
+        width: 100%
+        display: flex
+        align-items: stretch
+        flex-direction: row
+        flex-wrap: wrap
+        gap: 10px
+        margin: 0 0 20px
+
+    .unique-tab
+        width: 30%
+
+    .unique-content
+        padding: 30px
+
+    .unique-content .content-box
+        gap: 20px
+
+    .unique-features h2
+        margin: 0 0 30px
+
+    // .unique-content .content-box.vertical-scroll
+    //     height: auto
+
+    .content-right
+        padding-top: 20px
+        
+    .compare-col::before
+        display: none
 
 @media only screen and (max-width: 992px)
     .container
@@ -300,7 +356,7 @@
     .about-stend-box
         margin: 0 0 24px
 
-    .horizontal-scroll
+    .vertical-scroll
         overflow-x: auto
 
     .table,
@@ -333,6 +389,62 @@
         &:last-child
             margin: 0 0 20px
 
+    .price-box
+        width: 100%
+        max-width: none
+
+    .learn-slider__arrow
+        justify-content: start
+
+    .slick-arrow
+        width: 60px
+        height: 60px
+        min-width: 60px
+        margin: 0 20px 0 0
+        &:last-child
+            margin: 0
+
+    .learn-box
+        width: 400px
+
+    .learn-slider .slick-slide
+        padding: 0 10px
+
+    .learn-slider .slick-list
+        margin: 0 -10px
+
+    .learn-box__body
+        padding: 20px 0 0
+
+    .prices-card__text
+        margin: 20px 0 0
+
+    .mb-45
+        margin-bottom: 30px
+
+    .footer-bottom
+        margin: 40px 0 0
+
+    .link-developer
+        margin: 20px 0 0
+        justify-content: flex-start
+
+    .mb-35
+        margin-bottom: 20px
+
+    .callback-wrapper
+        .box-text
+            br
+                display: none
+        .form-callback
+            flex-direction: column
+            align-items: flex-start
+        .consent
+            margin: 20px 0 0
+
+    footer
+        padding: 60px 0 20px
+
 @media only screen and (max-width: 768px)
 
     .unique-section
@@ -354,24 +466,13 @@
         &::-webkit-scrollbar-thumb
             background: #1caeff
 
-    .unique-tab
-        min-width: 240px
-        font-size: 16px
-        min-height: 60px
-        padding: 16px 20px
+    // .unique-tab
+    //     min-width: 240px
+    //     font-size: 16px
+    //     min-height: 60px
+    //     padding: 16px 20px
 
-    .content-box
-        padding: 24px
-        border-radius: 24px
 
-    .content-left
-
-        h3
-            font-size: 34px
-
-    .content-count
-        font-size: 28px
-        margin-bottom: 24px
 
     .feature-item
         border-radius: 24px
@@ -387,7 +488,6 @@
     .cross-icon
         width: 46px
         height: 46px
-        font-size: 22px
 
     .home-content-wrapper
         flex-direction: column
@@ -432,7 +532,6 @@
     .interface,
     .equipment,
     .prices,
-    .learn,
     .callback,
     footer
         padding: 40px 0
@@ -483,6 +582,36 @@
     .accordion-button:after
         width: 52px
         height: 37px
+
+    .slick-arrow
+        width: 50px
+        height: 50px
+        min-width: 50px
+
+    .slick-arrow::before
+        width: 15px
+        height: 30px
+
+    .footer-wrapper
+        flex-direction: column
+        align-items: flex-start
+
+    .footer-column
+        margin: 0 0 20px
+
+    .unique-tab
+        width: 48%
+
+    .compare-col
+        padding: 0 10px
+
+    .dot
+        width: 10px
+        height: 10px
+        min-width: 10px
+
+    .feature-item
+        gap: 10px
         
 @media only screen and (max-width: 480px)
     h1, .h1
@@ -522,6 +651,9 @@
 
     .consent
         font-size: 12px
+
+    .learn-box
+        width: 300px
 
 @media only screen and (max-width: 420px)
     h1, .h1
@@ -569,3 +701,6 @@
     select
         font-size: 13px
         height: 44px
+
+    .learn-box
+        width: 250px

@@ -353,23 +353,23 @@ h5, .h5 {
   line-height: 100%;
 }
 
-.horizontal-scroll {
+.vertical-scroll {
   overflow-y: auto;
   scrollbar-width: 16px;
   scrollbar-color: #182333;
 }
-.horizontal-scroll::-webkit-scrollbar {
+.vertical-scroll::-webkit-scrollbar {
   width: 16px;
 }
-.horizontal-scroll::-webkit-scrollbar-track {
+.vertical-scroll::-webkit-scrollbar-track {
   background: #182333;
   border-radius: 30px;
 }
-.horizontal-scroll::-webkit-scrollbar-thumb {
+.vertical-scroll::-webkit-scrollbar-thumb {
   background: #2A3546;
   border-radius: 10px;
 }
-.horizontal-scroll::-webkit-scrollbar-thumb:hover {
+.vertical-scroll::-webkit-scrollbar-thumb:hover {
   background: #34445C;
 }
 

@@ -23,6 +23,21 @@
     padding: 20px 0 0;
     margin: 20px 0 0;
   }
+  .callback-wrapper__content {
+    max-width: none;
+    width: 100%;
+  }
+  .callback-wrapper .form-callback {
+    width: 100%;
+    margin: 20px 0 0;
+  }
+  .callback-wrapper .form-callback label {
+    max-width: none;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 10px 0 0;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .header-wrapper {
@@ -100,7 +115,7 @@
   .learn-box {
     padding: 20px;
   }
-  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before {
+  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before, footer::before {
     width: 700px;
     height: 700px;
     opacity: 0.1;
@@ -133,8 +148,17 @@
   .models .h1 {
     font-size: 150px;
   }
-  .models-list .horizontal-scroll {
+  .models-list .vertical-scroll {
     padding: 0 30px 0 0;
+  }
+  footer::before {
+    left: -150px;
+  }
+  footer {
+    padding: 100px 0 30px;
+  }
+  .map {
+    margin: 30px 0 0;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -179,8 +203,7 @@
   }
   .home-image,
   .about-stend__image,
-  .interface-image,
-  .price-image {
+  .interface-image {
     max-width: 100%;
     margin: 40px auto 0;
     -webkit-box-pack: center;
@@ -193,7 +216,7 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before {
+  .about-stend::before, .about-stend:after, .home::before, .equipment::before, .interface::before, .functions::before, .unique-features::before, .prices::before, footer::before {
     width: 500px;
     height: 500px;
   }
@@ -268,6 +291,58 @@
   .functions {
     padding: 100px 0;
   }
+  .address-box-footer, .schedule-box {
+    margin: 0 0 30px;
+  }
+  .unique-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .unique-content {
+    width: 100%;
+  }
+  .unique-nav {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 20px;
+  }
+  .unique-tab {
+    width: 30%;
+  }
+  .unique-content {
+    padding: 30px;
+  }
+  .unique-content .content-box {
+    gap: 20px;
+  }
+  .unique-features h2 {
+    margin: 0 0 30px;
+  }
+  .content-right {
+    padding-top: 20px;
+  }
+  .compare-col::before {
+    display: none;
+  }
 }
 @media only screen and (max-width: 992px) {
   .container {
@@ -339,7 +414,7 @@
   .about-stend-box {
     margin: 0 0 24px;
   }
-  .horizontal-scroll {
+  .vertical-scroll {
     overflow-x: auto;
   }
   .table,
@@ -374,6 +449,72 @@
   .accordion-item:last-child {
     margin: 0 0 20px;
   }
+  .price-box {
+    width: 100%;
+    max-width: none;
+  }
+  .learn-slider__arrow {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .slick-arrow {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    margin: 0 20px 0 0;
+  }
+  .slick-arrow:last-child {
+    margin: 0;
+  }
+  .learn-box {
+    width: 400px;
+  }
+  .learn-slider .slick-slide {
+    padding: 0 10px;
+  }
+  .learn-slider .slick-list {
+    margin: 0 -10px;
+  }
+  .learn-box__body {
+    padding: 20px 0 0;
+  }
+  .prices-card__text {
+    margin: 20px 0 0;
+  }
+  .mb-45 {
+    margin-bottom: 30px;
+  }
+  .footer-bottom {
+    margin: 40px 0 0;
+  }
+  .link-developer {
+    margin: 20px 0 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .mb-35 {
+    margin-bottom: 20px;
+  }
+  .callback-wrapper .box-text br {
+    display: none;
+  }
+  .callback-wrapper .form-callback {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .callback-wrapper .consent {
+    margin: 20px 0 0;
+  }
+  footer {
+    padding: 60px 0 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .unique-section {
@@ -401,23 +542,6 @@
   .unique-nav::-webkit-scrollbar-thumb {
     background: #1caeff;
   }
-  .unique-tab {
-    min-width: 240px;
-    font-size: 16px;
-    min-height: 60px;
-    padding: 16px 20px;
-  }
-  .content-box {
-    padding: 24px;
-    border-radius: 24px;
-  }
-  .content-left h3 {
-    font-size: 34px;
-  }
-  .content-count {
-    font-size: 28px;
-    margin-bottom: 24px;
-  }
   .feature-item {
     border-radius: 24px;
     font-size: 14px;
@@ -434,7 +558,6 @@
   .cross-icon {
     width: 46px;
     height: 46px;
-    font-size: 22px;
   }
   .home-content-wrapper {
     -webkit-box-orient: vertical;
@@ -485,7 +608,6 @@
   .interface,
   .equipment,
   .prices,
-  .learn,
   .callback,
   footer {
     padding: 40px 0;
@@ -540,6 +662,41 @@
     width: 52px;
     height: 37px;
   }
+  .slick-arrow {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+  .slick-arrow::before {
+    width: 15px;
+    height: 30px;
+  }
+  .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .footer-column {
+    margin: 0 0 20px;
+  }
+  .unique-tab {
+    width: 48%;
+  }
+  .compare-col {
+    padding: 0 10px;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    min-width: 10px;
+  }
+  .feature-item {
+    gap: 10px;
+  }
 }
 @media only screen and (max-width: 480px) {
   h1, .h1 {
@@ -579,6 +736,9 @@
   }
   .consent {
     font-size: 12px;
+  }
+  .learn-box {
+    width: 300px;
   }
 }
 @media only screen and (max-width: 420px) {
@@ -628,5 +788,8 @@
   select {
     font-size: 13px;
     height: 44px;
+  }
+  .learn-box {
+    width: 250px;
   }
 }
