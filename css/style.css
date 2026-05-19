@@ -373,6 +373,13 @@ h5, .h5 {
   background: #34445C;
 }
 
+.tab-pane-custom {
+  display: none;
+}
+.tab-pane-custom.active {
+  display: block;
+}
+
 .slick-slider {
   width: 100%;
 }
